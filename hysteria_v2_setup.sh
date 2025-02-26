@@ -33,8 +33,8 @@ run_hysteria_v2_setup() {
             return
         fi
     else
-        readp "Enter the listening port: " port
-        readp "Enter the obfuscation password: " password
+        read "Enter the listening port: " port
+        read "Enter the obfuscation password: " password
 
         mkdir -p "$user_directory"
         cd "$user_directory"
@@ -263,7 +263,7 @@ show_hy2_configs() {
         echo "Hysteria directory does not exist. Please install Hysteria first."
     fi
 
-    readp "Press Enter to continue..."
+    read "Press Enter to continue..."
 }
 delete_hysteria_v2() {
     clear
