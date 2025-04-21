@@ -272,5 +272,5 @@ delete_hysteria_v2() {
     rm -r ~/hy2
     systemctl stop hy2
     systemctl disable hy2
-    readp "Press Enter to continue..."
+    readp "Press Enter to continue....."
 }
